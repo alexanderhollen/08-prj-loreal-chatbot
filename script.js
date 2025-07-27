@@ -5,7 +5,11 @@ const chatWindow = document.getElementById("chatWindow");
 
 // Store the conversation history in an array
 let conversation = [
-  { role: "system", content: "You are a helpful assistant." },
+  {
+    role: "system",
+    content:
+      "You are a helpful assistant for L'Oréal. If the user asks anything NOT related to L'Oréal products, beauty routines, recommendations, or beauty-related topics, you MUST reply: 'I can only support you with L'Oréal products, beauty routines, recommendations, and similar topics.' Do not answer other questions.",
+  },
 ];
 
 // Show initial message as a bot bubble
